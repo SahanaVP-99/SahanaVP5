@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 6 Question-1</title>
+</head>
+<body>
+    <p id="dark">Day 6 Question-1</p>
+    <h2>
+" RAIN GIVES CROPS , WHICH GIVE LIFE"
+I LOVE RAINY WEATHER.</h2>
+    <script>
+        let i = 0;
+        function change(){
+        const dmode = document.getElementById('dark');
+        let array = ['yellow','white','blue','purple','green'];
+            document.body.style.backgroundColor=array[i];
+            i=(i+1) % array.length;
+        }
+        setInterval(change,5000);
+
+    </script>
+</body>
+</html>
